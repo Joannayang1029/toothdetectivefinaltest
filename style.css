@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'GenSenRounded-H';
     src: url('assets/fonts/GenSenRounded-H.ttc') format('truetype');
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
@@ -133,7 +133,7 @@ body {
     transform: translateX(-50%);
     padding: 18px 80px;
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 500;
     background: linear-gradient(135deg, #ff4d4d, #e60000);
     color: #ffffff;
     border: none;
@@ -260,7 +260,7 @@ body {
 .question-content {
     font-family: 'GenSenRounded-H', "Microsoft JhengHei", sans-serif;
     font-size: 3.0rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.5;
     text-align: center;
     color: #62372C;
@@ -288,7 +288,7 @@ body {
 .option-btn {
     font-family: 'GenSenRounded-H', "Microsoft JhengHei", sans-serif;
     font-size: 2.85rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.45;
     text-align: center;
     color: #62372C;
@@ -357,7 +357,7 @@ body {
 .feedback-div strong {
     font-family: 'GenSenRounded-H', "Microsoft JhengHei", sans-serif;
     font-size: 3.6rem;
-    font-weight: 700;
+    font-weight: 500;
     color: #62372C;
     display: block;
     margin-bottom: 30px;
@@ -467,7 +467,7 @@ body {
 
 .dialog-text .name {
     font-size: 68px;
-    font-weight: 700;
+    font-weight: 500;
     margin: 0 0 15px 110px;
     text-align: left;
     line-height: 1.1;
@@ -476,7 +476,7 @@ body {
 
 .dialog-text .content {
     font-size: 68px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.55;
     text-align: center;
     margin: 0 auto;
@@ -514,7 +514,7 @@ body {
     transform: translateX(-50%);
     padding: 22px 80px;
     font-size: 2.4rem;
-    font-weight: 900;
+    font-weight: 500;
     font-family: 'GenSenRounded-H', "Microsoft JhengHei", sans-serif;
     color: #62372C;
     background-color: #FFFFFF;
@@ -544,7 +544,7 @@ body {
     transform: translateX(-50%);
     padding: 20px 70px;
     font-size: 2.2rem;
-    font-weight: 900;
+    font-weight: 500;
     font-family: 'GenSenRounded-H', "Microsoft JhengHei", sans-serif;
     color: #FFFFFF;
     background-color: #62372C;

@@ -566,3 +566,15 @@ body {
 .analysis-btn:active {
     transform: translateX(-50%) scale(0.96);
 }
+
+/* ========================================================
+   強制修正：確保結果表格（不論被塞在哪）都能完美讀到源字體
+   ======================================================== */
+#resultTable td, 
+.feedback-div td {
+    /* 1. 用 !important 擊碎 JavaScript 寫死的內聯樣式 */
+    font-family: 'GenSenRounded-B', "Microsoft JhengHei", sans-serif !important;
+    
+    /* 2. 強制拉回 500，讓瀏覽器精準匹配到你的 @font-face 檔案 */
+    font-weight: 500 !important; 
+}

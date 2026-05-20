@@ -53,7 +53,7 @@ const ASSETS = {
     q5_0: "assets/q5/q5_0.png",
     q5_1: "assets/q5/q5_1.png",
     q5_2: "assets/q5/q5_2.png",
-    end: "assets/end.webm"
+    end: "assets/end_new.webm"
 };
 
 const questions = [

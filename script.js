@@ -423,7 +423,7 @@ function showCurrentPage() {
         tableContainer.style.left = "57%";
         tableContainer.style.transform = "translateX(-50%)";
         tableContainer.style.width = "80%"; //越大越寬
-        tableContainer.style.maxWidth = "1400px";
+        tableContainer.style.maxWidth = "1300px";
         tableContainer.style.zIndex = "20";
         tableContainer.style.fontFamily = "'GenSenRounded-H', sans-serif";
         tableContainer.style.color = "#62372C";
@@ -450,11 +450,11 @@ function showCurrentPage() {
                         ${index+1}
                     </td>
                     <!-- 題目（右移 + 加寬） -->
-                    <td style=" padding: 8px 10px; width: 40%; text-align:left; vertical-align:middle; color:${rowColor};">
+                    <td style=" padding: 8px 10px; width: 38%; text-align:left; vertical-align:middle; color:${rowColor};">
                         ${q.question}
                     </td>
                     <!-- 答案（右移 + 加寬） -->
-                    <td style="padding: 8px 10px; width: 40%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};">
+                    <td style="padding: 8px 10px; width: 42%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};">
                         ${userAnswerText}
                     </td>
                 </tr>

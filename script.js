@@ -420,7 +420,7 @@ function showCurrentPage() {
         tableContainer.id = "resultTable";
         tableContainer.style.position = "absolute";
         tableContainer.style.top = "28%"; //越大越往下
-        tableContainer.style.left = "53%";
+        tableContainer.style.left = "60%";
         tableContainer.style.transform = "translateX(-50%)";
         tableContainer.style.width = "100%"; //越大越寬
         tableContainer.style.maxWidth = "1550px";

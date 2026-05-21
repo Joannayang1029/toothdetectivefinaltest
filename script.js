@@ -428,6 +428,7 @@ function showCurrentPage() {
         tableContainer.style.fontFamily = "'GenSenRounded-H', sans-serif";
         tableContainer.style.color = "#62372C";
         tableContainer.style.lineHeight = "1.45";
+        tableContainer.style.backgroundColor = "rgba(255, 0, 0, 0.3)";
 
         let html = `<table style="width:100%; border-collapse:collapse; font-size:32px;">`;
 

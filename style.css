@@ -390,9 +390,9 @@ body {
     /* 拿掉 padding: 0 20px;，改由外層 padding 控制 */
     
     /* 👇 核心魔法：字太多時自動折行（單行文字不換行設定只給選項，題目要讓它自然換行） */
-    white-space: normal; 
+    /*white-space: normal; 
     word-break: break-all;
-}
+}*/
 
 .options-container {
     position: absolute;

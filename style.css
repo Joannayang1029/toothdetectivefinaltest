@@ -280,7 +280,7 @@ body {
     transform: translateX(-50%);
     
     width: 60%;
-    max-width: 88%;
+    max-width: 100%;
     min-width: 400px;
     
     padding: 48px 80px;

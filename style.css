@@ -111,6 +111,26 @@ body {
 
 #scannerScreen {
     background: #111;
+    
+    /* 1. 啟用 Flexbox 佈局 */
+    display: flex;
+    
+    /* 2. 關鍵：將排列方向改為「垂直從上往下」 */
+    flex-direction: column;
+    
+    /* 3. 水平置中（讓掃描框跟按鈕都在畫面正中間） */
+    align-items: center;
+    
+    /* 4. 垂直置中（如果想要整組上下也居中的話） */
+    justify-content: center;
+    
+    /* 5. 加上元件之間的 Gap（間距） */
+    /* 這樣掃描框跟下面的「停止掃描」按鈕就不會死死貼在一起了，數字可依需求調整 */
+    gap: 30px; 
+    
+    /* 確保這個畫面有填滿整個容器的高度 */
+    width: 100%;
+    height: 100%;
 }
 
 .scanner-container {

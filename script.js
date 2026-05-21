@@ -428,8 +428,7 @@ function showCurrentPage() {
         tableContainer.style.fontFamily = "'GenSenRounded-H', sans-serif";
         tableContainer.style.color = "#62372C";
         tableContainer.style.lineHeight = "1.45";
-        tableContainer.style.backgroundColor = "rgba(255, 0, 0, 0.3)";
-
+        
         let html = `<table style="width:100%; border-collapse:collapse; font-size:32px;">`;
 
         questions.forEach((q, index) => {
@@ -447,15 +446,15 @@ function showCurrentPage() {
             html += `
                 <tr style="height: ${rowHeight};">
                     <!-- 題號（位置固定） -->
-                    <td style=" padding: 8px 4px; width:20%; text-align:center; font-weight:900; vertical-align:middle; color:${rowColor};">
+                    <td style=" padding: 8px 4px; width:20%; text-align:center; font-weight:900; vertical-align:middle; color:${rowColor};background-color: rgba(255, 0, 0, 0.3);">
                         ${index+1}
                     </td>
                     <!-- 題目（右移 + 加寬） -->
-                    <td style=" padding: 8px 4px; width: 48%; text-align:left; vertical-align:middle; color:${rowColor};">
+                    <td style=" padding: 8px 4px; width: 48%; text-align:left; vertical-align:middle; color:${rowColor};background-color: rgba(255, 0, 0, 0.3);">
                         ${q.question}
                     </td>
                     <!-- 答案（右移 + 加寬） -->
-                    <td style="padding: 8px 4px; width: 35%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};">
+                    <td style="padding: 8px 4px; width: 35%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};background-color: rgba(255, 0, 0, 0.3);">
                         ${userAnswerText}
                     </td>
                 </tr>

@@ -429,7 +429,7 @@ function showCurrentPage() {
         tableContainer.style.color = "#62372C";
         tableContainer.style.lineHeight = "1.45";
 
-        let html = `<table style="width:100%; border-collapse:collapse; font-size:30px;">`;
+        let html = `<table style="width:100%; border-collapse:collapse; font-size:36px;">`;
 
         questions.forEach((q, index) => {
             const ansIndex = userAnswers[index] !== undefined ? userAnswers[index] : -1;
@@ -446,15 +446,15 @@ function showCurrentPage() {
             html += `
                 <tr style="height: ${rowHeight};">
                     <!-- 題號（位置固定） -->
-                    <td style=" padding: 8px 4px; width: 5%; text-align:center; font-weight:900; vertical-align:middle; color:${rowColor};">
+                    <td style=" padding: 8px 4px; width: 10%; text-align:center; font-weight:900; vertical-align:middle; color:${rowColor};">
                         ${index+1}
                     </td>
                     <!-- 題目（右移 + 加寬） -->
-                    <td style=" padding: 8px 10px; width: 20%; text-align:left; vertical-align:middle; color:${rowColor};">
+                    <td style=" padding: 8px 10px; width: 50%; text-align:left; vertical-align:middle; color:${rowColor};">
                         ${q.question}
                     </td>
                     <!-- 答案（右移 + 加寬） -->
-                    <td style="padding: 8px 10px; width: 15%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};">
+                    <td style="padding: 8px 10px; width: 40%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};">
                         ${userAnswerText}
                     </td>
                 </tr>

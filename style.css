@@ -382,10 +382,10 @@ body {
     transform: translate(-50%, -50%);
     
     width: auto;
-    max-width: 86%;
-    min-width: 620px;
+    max-width: 60%;
+    min-width: 400px;
 
-    padding: 55px 80px 65px;
+    padding: 40px 60px 50px;
 
     border-radius: 9999px;
 
@@ -491,7 +491,7 @@ body {
 
 .dialog-text {
     position: absolute;
-    bottom: 20%;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;

@@ -333,7 +333,7 @@ body {
     word-break: break-all;
 }
 
-.options-container {
+/*.options-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -345,9 +345,58 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 36px;
+}*/
+
+.options-container {
+    position: absolute;
+    top: 53%; /* 稍微往下微調一點點，配合上面變兩行的題目 */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /* 👇 寬度改成 auto，讓它完美包覆裡面自動伸縮的按鈕 */
+    width: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* 縮小按鈕之間的上下 Gap，畫面會更緊湊精緻、不會過高 */
 }
 
 .option-btn {
+    font-family: 'GenSenRounded-B', "Microsoft JhengHei", sans-serif;
+    font-size: 2.4rem; /* 💡 稍微縮小一點點字體（原本 2.85），能讓長字數在單行排得更優雅，高度也不會被字體撐太高 */
+    font-weight: 900;
+    line-height: 1.2;  /* 縮小行高，防止上下空間被撐開 */
+    text-align: center;
+    color: #62372C;
+    background-color: transparent;
+
+    /* 👇 1. 核心魔法：寬度放開！不要 100%，由文字多寡決定寬度 */
+    width: max-content; 
+    
+    /* 👇 2. 高度放開！拿掉原本的 min-height: 110px，改由 padding 決定 */
+    height: auto; 
+    
+    /* 👇 3. 精準控制方塊胖瘦：第一個數字是上下（控制高度），第二個數字是左右（控制寬度） */
+    /* 上下只給 18px 確保方塊扁平不過高；左右給 50px 讓兩側有漂亮的長條延伸感 */
+    padding: 18px 50px; 
+
+    border: 4px solid #62372C;
+    border-radius: 120px;
+    cursor: pointer;
+    
+    /* 👇 4. 核心魔法：強制文字絕對不准換行，一定要排成單行 */
+    white-space: nowrap; 
+    
+    /* 調整彈性佈局，拿掉不必要的置中擠壓 */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    transition: all 0.2s ease;
+}
+
+/*.option-btn {
     font-family: 'GenSenRounded-B', "Microsoft JhengHei", sans-serif;
     font-size: 2.85rem;
     font-weight: 900;
@@ -373,7 +422,7 @@ body {
     word-break: break-all;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
     transition: all 0.2s ease;
-}
+}*/
 
 /* .option-btn.clicked {
     background-color: #62372C !important;

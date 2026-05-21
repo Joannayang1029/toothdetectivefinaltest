@@ -420,7 +420,7 @@ function showCurrentPage() {
         tableContainer.id = "resultTable";
         tableContainer.style.position = "absolute";
         tableContainer.style.top = "25%"; //越大越往下
-        tableContainer.style.left = "60%";
+        tableContainer.style.left = "55%";
         tableContainer.style.transform = "translateX(-50%)";
         tableContainer.style.width = "100%"; //越大越寬
         tableContainer.style.maxWidth = "1550px";
@@ -438,23 +438,23 @@ function showCurrentPage() {
             const rowColor = isCorrect ? "#62372C" : "#E63946";
             
             let rowHeight = "160px";
-            if (index === 1) rowHeight = "180px";
-            else if (index === 2) rowHeight = "180px";
-            else if (index === 3) rowHeight = "180px";
-            else if (index === 4) rowHeight = "200px";
+            if (index === 1) rowHeight = "160px";
+            else if (index === 2) rowHeight = "160px";
+            else if (index === 3) rowHeight = "160px";
+            else if (index === 4) rowHeight = "180px";
             console.log("index:", index, "rowHeight:", rowHeight);
             html += `
                 <tr style="height: ${rowHeight};">
                     <!-- 題號（位置固定） -->
-                    <td style=" padding: 16px 4px; width: 5%; text-align:center; font-weight:900; vertical-align:middle; color:${rowColor};">
+                    <td style=" padding: 8px 4px; width: 5%; text-align:center; font-weight:900; vertical-align:middle; color:${rowColor};">
                         ${index+1}
                     </td>
                     <!-- 題目（右移 + 加寬） -->
-                    <td style=" padding: 16px 10px; width: 20%; text-align:left; vertical-align:middle; color:${rowColor};">
+                    <td style=" padding: 8px 10px; width: 20%; text-align:left; vertical-align:middle; color:${rowColor};">
                         ${q.question}
                     </td>
                     <!-- 答案（右移 + 加寬） -->
-                    <td style="padding: 16px 10px; width: 15%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};">
+                    <td style="padding: 8px 10px; width: 15%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};">
                         ${userAnswerText}
                     </td>
                 </tr>

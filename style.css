@@ -573,13 +573,13 @@ body {
 
 /* 3. 分配行高 (Row) 比例：因為有 5 題，所以每一列固定佔 20% 高度 */
 #resultTable tr {
-    height: 20%; 
+    height: 10%; 
 }
 
 /* 4. 分配欄寬 (Column) 比例：對齊圖片上的垂直虛線 */
 #resultTable td:first-child {
     /* 微調這個 % 數，直到文字剛好落在圖片垂直虛線的左邊 */
-    width: 58%; 
+    width: 70%; 
 }
 #resultTable td:last-child {
     width: 42%; 

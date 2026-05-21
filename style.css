@@ -533,7 +533,7 @@ body {
     z-index: 20;
 }
 
-/*#resultTable table {
+#resultTable table {
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
@@ -547,62 +547,6 @@ body {
 #resultTable td {
     word-break: break-word;
     overflow-wrap: break-word;
-}*/
-
-/* 1. 外框定位：這個 div 必須精準覆蓋在圖片的「波浪白框」範圍內 */
-/* 假設包住 table 的 div 叫做 #resultTableContainer (請依你的 HTML ID 調整) */
-#resultTable {
-    position: absolute;
-    /* 下面這四個數字是『魔法數字』，你需要邊看畫面邊微調，讓它剛好貼齊畫死在背景上的虛線框 */
-    top: 0%;    /* 距離畫面上方的距離 */
-    left: 17%;   /* 距離畫面左邊的距離 */
-    width: 40%;  /* 透明表格的總寬度 */
-    height: 50%; /* 透明表格的總高度 */
-    
-    /* 測試用小技巧：你可以先暫時解開下一行的註解，給它一個半透明紅色，對齊圖片後再刪掉！ */
-    background-color: rgba(255, 0, 0, 0.3);
-}
-
-/* 2. 表格本體：填滿外框 */
-#resultTable table {
-    width: 100%;
-    height: 100%; /* 絕對填滿我們設定好的透明外框 */
-    table-layout: fixed; 
-    border-collapse: collapse;
-}
-
-/* 3. 分配行高 (Row) 比例：因為有 5 題，所以每一列固定佔 20% 高度 */
-#resultTable tr {
-    height: 0%; 
-}
-
-/* 4. 分配欄寬 (Column) 比例：對齊圖片上的垂直虛線 */
-#resultTable td:first-child {
-    /* 微調這個 % 數，直到文字剛好落在圖片垂直虛線的左邊 */
-    width: 70%; 
-}
-#resultTable td:last-child {
-    width: 42%; 
-}
-
-/* 5. 每一格 (td) 的內部設定：純排版，絕對不畫線 */
-#resultTable td {
-    box-sizing: border-box;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    
-    /* 內部推擠：確保文字不會壓到圖片上的虛線 */
-    padding: 10px 15px; 
-    
-    /* 字體大小：建議用 vh 或 % 讓它跟著螢幕縮放 */
-    font-size: 1.8vh; 
-    line-height: 1.4;
-    
-    /* 讓文字在每一格裡面垂直置中 */
-    vertical-align: middle; 
-    
-    /* 確保沒有任何程式碼產生的邊框 */
-    border: none; 
 }
 
 .next-question-btn {

@@ -272,7 +272,7 @@ body {
     transition: width 0.4s ease;
 }
 
-.question-text {
+/*.question-text {
     position: absolute;
     top: 23%;
     left: 50%;
@@ -292,7 +292,7 @@ body {
     border-radius: 200px;
     background-color: #FBF900;
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
-}
+}*/
 
 /* .question-text {
     position: absolute;
@@ -319,7 +319,7 @@ body {
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
 } */
 
-.question-content {
+/*.question-content {
     font-family: 'GenSenRounded-B', "Microsoft JhengHei", sans-serif;
     font-size: 3.0rem;
     font-weight: 900;
@@ -331,7 +331,7 @@ body {
     padding: 0 20px;
     white-space: normal;
     word-break: break-all;
-}
+}*/
 
 /*.options-container {
     position: absolute;
@@ -346,6 +346,54 @@ body {
     align-items: center;
     gap: 36px;
 }*/
+
+.question-text {
+    position: absolute;
+    top: 22%; /* 稍微往上一點點，留空間給下面的選項 */
+    left: 50%;
+    z-index: 20;
+    transform: translateX(-50%);
+    
+    /* 👇 1. 寬度核心魔法：改成 auto，讓寬度完全由文字多寡決定！ */
+    width: auto; 
+    
+    /* 👇 2. 限制最大寬度，這樣字太多時（如第 5 題）會乖乖斷行，不衝出螢幕 */
+    max-width: 850px; 
+    
+    /* 刪除原本的 width: 60% 和 min-width: 600px */
+    
+    /* 👇 3. 高度核心魔法：改成 auto，拿掉 min-height */
+    height: auto; 
+    
+    /* 👇 4. 精準控制方塊扁平感：第一個數字是上下（控制高度），第二個數字是左右（控制寬度） */
+    /* 上下給 25px 保持精緻扁平；左右給 80px 讓字少時也能呈現長橢圓的美感 */
+    padding: 25px 80px; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 200px;
+    background-color: #FBF900;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+.question-content {
+    font-family: 'GenSenRounded-B', "Microsoft JhengHei", sans-serif;
+    font-size: 2.8rem; /* 字體大小稍微降一點點（原本 3.0），兩行時視覺更完美 */
+    font-weight: 900;
+    line-height: 1.4;  /* 稍微縮小行高，讓兩行文字看起來更緊湊、方塊更扁平 */
+    text-align: center;
+    color: #62372C;
+    
+    width: 100%;
+    
+    /* 拿掉 padding: 0 20px;，改由外層 padding 控制 */
+    
+    /* 👇 核心魔法：字太多時自動折行（單行文字不換行設定只給選項，題目要讓它自然換行） */
+    white-space: normal; 
+    word-break: break-all;
+}
 
 .options-container {
     position: absolute;

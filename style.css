@@ -274,7 +274,7 @@ body {
 
 .question-text {
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     z-index: 20;
     transform: translateX(-50%);

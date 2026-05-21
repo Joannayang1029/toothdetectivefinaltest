@@ -281,7 +281,7 @@ body {
     
     width: 60%;
     max-width: 100%;
-    min-width: 500px;
+    min-width: 600px;
     
     padding: 48px 80px;
     min-height: 220px;
@@ -357,6 +357,7 @@ body {
 
     background-color: transparent;
     width: 100%;
+    max-weight:200px;
     min-height: 110px;
     padding: 0px 20px;
 

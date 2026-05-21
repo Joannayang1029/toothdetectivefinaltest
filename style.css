@@ -504,7 +504,7 @@ body {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    height: 320px;
+    /*height: 320px;*/
 }
 
 .dialog-text .name {

@@ -429,7 +429,7 @@ function showCurrentPage() {
         tableContainer.style.color = "#62372C";
         tableContainer.style.lineHeight = "1.45";
 
-        let html = `<table style="width:100%; border-collapse:collapse; font-size:40px;">`;
+        let html = `<table style="width:100%; border-collapse:collapse; font-size:20px;">`;
 
         questions.forEach((q, index) => {
             const ansIndex = userAnswers[index] !== undefined ? userAnswers[index] : -1;

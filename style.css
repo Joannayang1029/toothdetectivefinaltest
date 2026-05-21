@@ -358,7 +358,7 @@ body {
     width: auto; 
     
     /* 👇 2. 限制最大寬度，這樣字太多時（如第 5 題）會乖乖斷行，不衝出螢幕 */
-    max-width: 1000px; 
+    max-width: 1310px; 
     
     
     /* 👇 3. 高度核心魔法：改成 auto，拿掉 min-height */

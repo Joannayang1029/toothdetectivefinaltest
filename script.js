@@ -446,7 +446,7 @@ function showCurrentPage() {
             html += `
                 <tr style="height: ${rowHeight};">
                     <!-- 題號（位置固定） -->
-                    <td style=" padding: 8px 4px; width:20%; text-align:center; font-weight:900; vertical-align:middle; color:${rowColor};background-color:#62372C;">
+                    <td style=" padding: 8px 4px; width:20%; text-align:center; font-weight:900; vertical-align:middle; color:${rowColor};background-color:rgba(240, 0, 0, 0.3);">
                         ${index+1}
                     </td>
                     <!-- 題目（右移 + 加寬） -->
@@ -454,7 +454,7 @@ function showCurrentPage() {
                         ${q.question}
                     </td>
                     <!-- 答案（右移 + 加寬） -->
-                    <td style="padding: 8px 4px; width: 35%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};background-color: #3794E9);">
+                    <td style="padding: 8px 4px; width: 35%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};background-color: rgba(225, 0, 0, 0.3);">
                         ${userAnswerText}
                     </td>
                 </tr>

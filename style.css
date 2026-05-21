@@ -508,7 +508,7 @@ body {
 }
 
 .dialog-text .name {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 900;
     margin: 0 0 15px 110px;
     text-align: left;
@@ -517,7 +517,7 @@ body {
 }
 
 .dialog-text .content {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 900;
     line-height: 1.55;
     text-align: center;

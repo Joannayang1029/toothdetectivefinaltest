@@ -419,10 +419,10 @@ function showCurrentPage() {
         tableContainer = document.createElement("div");
         tableContainer.id = "resultTable";
         tableContainer.style.position = "absolute";
-        tableContainer.style.top = "25%"; //越大越往下
+        tableContainer.style.top = "26%"; //越大越往下
         tableContainer.style.left = "57%";
         tableContainer.style.transform = "translateX(-50%)";
-        tableContainer.style.width = "100%"; //越大越寬
+        tableContainer.style.width = "80%"; //越大越寬
         tableContainer.style.maxWidth = "1500px";
         tableContainer.style.zIndex = "20";
         tableContainer.style.fontFamily = "'GenSenRounded-H', sans-serif";

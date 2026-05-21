@@ -438,10 +438,10 @@ function showCurrentPage() {
             const rowColor = isCorrect ? "#62372C" : "#E63946";
             
             let rowHeight = "160px";
-            if (index === 1) rowHeight = "160px";
-            else if (index === 2) rowHeight = "160px";
-            else if (index === 3) rowHeight = "160px";
-            else if (index === 4) rowHeight = "180px";
+            if (index === 1) rowHeight = "120px";
+            else if (index === 2) rowHeight = "120px";
+            else if (index === 3) rowHeight = "120px";
+            else if (index === 4) rowHeight = "140px";
             console.log("index:", index, "rowHeight:", rowHeight);
             html += `
                 <tr style="height: ${rowHeight};">

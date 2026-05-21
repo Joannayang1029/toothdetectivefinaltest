@@ -423,7 +423,7 @@ function showCurrentPage() {
         tableContainer.style.left = "57%";
         tableContainer.style.transform = "translateX(-50%)";
         tableContainer.style.width = "100%"; //越大越寬
-        tableContainer.style.maxWidth = "1200px";
+        tableContainer.style.maxWidth = "1500px";
         tableContainer.style.zIndex = "20";
         tableContainer.style.fontFamily = "'GenSenRounded-H', sans-serif";
         tableContainer.style.color = "#62372C";

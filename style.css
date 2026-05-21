@@ -398,7 +398,7 @@ body {
 
 .feedback-div strong {
     font-family: 'GenSenRounded-B', "Microsoft JhengHei", sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 900;
     color: #62372C;
     display: block;
@@ -408,8 +408,8 @@ body {
 
 .feedback-div p {
     font-family: 'GenSenRounded-B', "Microsoft JhengHei", sans-serif;
-    font-size: 2.85rem;
-    line-height: 1.68;
+    font-size: 1rem;
+    line-height: 1;
     color: #62372C;
     margin: 0;
     padding: 0 15px;
@@ -491,7 +491,7 @@ body {
 
 .dialog-text {
     position: absolute;
-    bottom: 0%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;

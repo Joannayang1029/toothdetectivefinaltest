@@ -446,15 +446,15 @@ function showCurrentPage() {
             html += `
                 <tr style="height: ${rowHeight};">
                     <!-- 題號（位置固定） -->
-                    <td style=" padding: 16px 8px; width:15%; text-align:center; font-weight:900; vertical-align:middle; color:${rowColor};background-color:rgba(0, 240, 0, 0.3);">
+                    <td style=" padding: 16px 8px; width:15%; text-align:center; font-weight:900; vertical-align:middle; color:${rowColor};">
                         ${index+1}
                     </td>
                     <!-- 題目（右移 + 加寬） -->
-                    <td style=" padding: 16px 8px; width: 47%; text-align:left; vertical-align:middle; color:${rowColor};background-color: rgba(255, 0, 0, 0.3);">
+                    <td style=" padding: 16px 8px; width: 47%; text-align:left; vertical-align:middle; color:${rowColor};">
                         ${q.question}
                     </td>
                     <!-- 答案（右移 + 加寬） -->
-                    <td style="padding: 16px 8px; width: 37%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};background-color: rgba(0, 0, 255, 0.3);">
+                    <td style="padding: 16px 8px; width: 37%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};">
                         ${userAnswerText}
                     </td>
                 </tr>

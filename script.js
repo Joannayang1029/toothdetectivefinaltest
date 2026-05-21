@@ -446,7 +446,7 @@ function showCurrentPage() {
             html += `
                 <tr style="height: ${rowHeight};">
                     <!-- 題號（位置固定） -->
-                    <td style=" padding: 16px 8px; width:18%; text-align:center; font-weight:900; vertical-align:middle; color:${rowColor};background-color:rgba(0, 240, 0, 0.3);">
+                    <td style=" padding: 16px 8px; width:16%; text-align:center; font-weight:900; vertical-align:middle; color:${rowColor};background-color:rgba(0, 240, 0, 0.3);">
                         ${index+1}
                     </td>
                     <!-- 題目（右移 + 加寬） -->

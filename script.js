@@ -450,11 +450,11 @@ function showCurrentPage() {
                         ${index+1}
                     </td>
                     <!-- 題目（右移 + 加寬） -->
-                    <td style=" padding: 16px 8px; width: 46%; text-align:left; vertical-align:middle; color:${rowColor};background-color: rgba(255, 0, 0, 0.3);">
+                    <td style=" padding: 16px 8px; width: 47%; text-align:left; vertical-align:middle; color:${rowColor};background-color: rgba(255, 0, 0, 0.3);">
                         ${q.question}
                     </td>
                     <!-- 答案（右移 + 加寬） -->
-                    <td style="padding: 16px 8px; width: 38%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};background-color: rgba(0, 0, 255, 0.3);">
+                    <td style="padding: 16px 8px; width: 37%; text-align:left; font-weight:900; vertical-align:middle; color:${rowColor};background-color: rgba(0, 0, 255, 0.3);">
                         ${userAnswerText}
                     </td>
                 </tr>

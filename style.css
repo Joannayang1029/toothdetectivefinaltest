@@ -631,6 +631,7 @@ body {
     text-align: left;
     line-height: 1.1;
     flex-shrink: 0;
+    display: block;
 }
 
 .dialog-text .content {

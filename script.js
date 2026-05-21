@@ -420,10 +420,10 @@ function showCurrentPage() {
         tableContainer.id = "resultTable";
         tableContainer.style.position = "absolute";
         tableContainer.style.top = "25%"; //越大越往下
-        tableContainer.style.left = "55%";
+        tableContainer.style.left = "57%";
         tableContainer.style.transform = "translateX(-50%)";
         tableContainer.style.width = "100%"; //越大越寬
-        tableContainer.style.maxWidth = "1550px";
+        tableContainer.style.maxWidth = "1200px";
         tableContainer.style.zIndex = "20";
         tableContainer.style.fontFamily = "'GenSenRounded-H', sans-serif";
         tableContainer.style.color = "#62372C";

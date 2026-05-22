@@ -5,7 +5,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 let userAnswers = [];
 
-const devMode = true;
+const devMode = false;
 
 const ASSETS = {
     page_start: "assets/page_start.png",
